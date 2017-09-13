@@ -128,6 +128,14 @@ class MigrateGenerateCommand extends GeneratorCommand {
 		parent::__construct( $generator );
 	}
 
+    /**
+     *  added for laravel 5.5
+     */
+	public function handle()
+    {
+        $this->fire();
+    }
+
 	/**
 	 * Execute the console command.
 	 *
